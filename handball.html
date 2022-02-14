@@ -47,17 +47,15 @@
   </nav>
 
 
-    <!-- carousel -->
-    
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/banner-01.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/banner-02.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/banner-03.jpg" class="d-block w-100" alt="...">
+  <main style="display: flex; justify-content: center;">
+    <div style="max-width: 600px;" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
 
 
@@ -68,7 +66,7 @@
           <img src="images/banner-01.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="images/banner-04.jpg" class="d-block w-100" alt="...">
+          <img src="images/banner-02.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <img src="images/banner-03.jpg" class="d-block w-100" alt="...">
@@ -104,7 +102,7 @@
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card h-100">
-        <img src="images/handball-1.jpeg" class="card-img-top" alt="...">
+        <img src="images/handball-01.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title"> Die Schweden sind Handball-Europameister</h5>
           <p class="card-text">Schweden feiert das Ende seines Titelfluchs - und den Kieler Siegtorschützen Niclas
@@ -116,36 +114,51 @@
             hatte selbst Schwedens alles überragenden Team-Oldie emotional umgehauen.</p>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/handball-2.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Manuel Neuer fehlt dem FC Bayern mehrere Wochen lang
-          </h5>
-          <p class="card-text">Wie die "Bild" berichtet, war der Grund für die Operation eine langwierige Meniskus-Blessur, die den Nationaltorhüter bereits seit einigen Monaten beschäftigt. 
 
-            Neuer habe dem Blatt zufolge seit der Hinrunden-Partie gegen den VfL Wolfsburg Mitte Dezember über Beschwerden geklagt und den Trainingsumfang immer wieder reduzieren müssen..</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/handball-3.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"> Lucien Favre wurde Ende 2020 beim BVB gefeuert</h5>
-          <p class="card-text"> Lucien Favre hat in einem Interview Verständnis für seine Entlassung bei Borussia Dortmund vor gut einem Jahr gezeigt. Gegen einige Vorwürfe wehrte sich der Ex-BVB-Coach allerdings vehement.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/handball-4.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Roger Federer hat eine Rückkehr auf den Tennis-Court noch nicht abgehakt
-          </h5>
-          <p class="card-text">"Ich habe das Gefühl, dass ich im April viel besser wissen werde, wo mein Körper steht", sagte der 40-Jährige bei einem Sponsorentermin für Credit Suisse: "Ich denke also, dass ich diese Frage besser im April oder Mai beantworten kann. Aber der Antrieb ist gerade auf jeden Fall da.".</p>
-        </div>
+
+      <div class="b-example-divider"></div>
+
+      <div class="container-fluid text-center border-top bg-dark">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-2">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="fussball.html" class="nav-link p-0 text-muted">Fussball</a></li>
+                <li class="nav-item mb-2"><a href="handball.html" class="nav-link p-0 text-muted">Handball</a></li>
+                <li class="nav-item mb-2"><a href="tennis.html" class="nav-link p-0 text-muted">Tennis</a></li>
+                <li class="nav-item mb-2"><a href="basketball.html" class="nav-link p-0 text-muted">Basketball</a></li>
+              </ul>
+            </div>
+
+            <div class="col-4 offset-1">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2021 ZER0SP0RT, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#twitter" />
+                  </svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#instagram" />
+                  </svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#facebook" />
+                  </svg></a></li>
+            </ul>
+          </div>
+        </footer>
       </div>
     </div>
   </div>  
